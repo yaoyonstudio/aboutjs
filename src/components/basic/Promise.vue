@@ -124,20 +124,22 @@ export default {
       console.log('something wrong happend')
     })
 
-    // let api = 'http://www.thatyou.cn/wp-json/wp/v2/posts'
-    // function getPosts (api) {
-    //   return fetch(api)
-    // }
-    // getPosts(api).then((res) => {
-    //   console.log(res)
-    //   if (res.ok && res.status === 200) {
-    //     res.json().then((data) => {
-    //       console.log(data)
-    //     })
-    //   }
-    // }, (error) => {
-    //   console.log(error)
-    // })
+    console.log('----------')
+
+    let api = 'http://www.thatyou.cn/wp-json/wp/v2/posts'
+    function getPosts (api) {
+      return fetch(api)
+    }
+    getPosts(api).then((res) => {
+      console.log(res)
+      if (res.ok && res.status === 200) {
+        res.json().then((data) => {
+          console.log(data)
+        })
+      }
+    }, (error) => {
+      console.log(error)
+    })
   }
 }
 </script>

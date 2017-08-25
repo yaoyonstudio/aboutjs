@@ -1,6 +1,6 @@
 <template>
   <div class="main myHeader">
-    <img class="logo" src="/static/img/js.jpg" />
+    <router-link to="/"><img class="logo" src="/static/img/js.jpg" /></router-link>
     <h2>About Javascript</h2>
   </div>
 </template>
@@ -29,6 +29,7 @@ export default {
   }
   .logo {
     height: 6rem;
+    cursor: pointer;
   }
 }
 </style>
