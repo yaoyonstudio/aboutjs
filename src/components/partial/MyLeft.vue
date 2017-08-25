@@ -13,9 +13,6 @@
 
 <script>
 
-// https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea
-// https://codeburst.io/master-javascript-prototypes-inheritance-d0a9a5a75c4e
-// https://codeburst.io/javascript-es-2017-learn-object-keys-object-values-and-object-entries-2626682f9667
 // https://codeburst.io/introducing-javascript-es6-proxies-1327419ab413
 // https://codeburst.io/javascript-hoisting-in-action-a2cef1212d52
 
