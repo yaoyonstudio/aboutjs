@@ -13,11 +13,6 @@
 
 <script>
 
-// https://codeburst.io/understand-closures-in-javascript-d07852fa51e7
-// https://codeburst.io/a-quick-practical-example-of-javascripts-reduce-function-862b506d01a4
-// https://codeburst.io/currying-in-javascript-how-why-a0d66f1366b
-// https://codeburst.io/array-functions-map-filter-18a6e5f75da1
-// https://codeburst.io/everything-you-should-know-about-promise-a05a20bf4c53
 // https://codeburst.io/learn-and-understand-recursion-in-javascript-b588218e87ea
 // https://codeburst.io/master-javascript-prototypes-inheritance-d0a9a5a75c4e
 // https://codeburst.io/javascript-es-2017-learn-object-keys-object-values-and-object-entries-2626682f9667
@@ -40,7 +35,11 @@ export default {
           link: '/basic/index',
           items: [
             {id: 1, title: '使用域Scope', link: '/basic/scope'},
-            {id: 1, title: 'Closure', link: '/basic/closure'}
+            {id: 2, title: 'Prototypes', link: '/basic/prototypes'},
+            {id: 2, title: 'Closure', link: '/basic/closure'},
+            {id: 3, title: 'Reduce', link: '/basic/reduce'},
+            {id: 3, title: 'Promise', link: '/basic/promise'},
+            {id: 3, title: 'Recursion', link: '/basic/recursion'}
           ]
         },
         {
