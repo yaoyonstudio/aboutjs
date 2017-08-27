@@ -14,7 +14,7 @@ export default {
 <style scoped lang="scss">
 .myHeader {
   width: 100%;
-  height: 8rem;
+  height: 6rem;
   background-color: #353130;
   display: flex;
   align-items: center;
@@ -26,9 +26,10 @@ export default {
     text-align: center;
     font-size: 1.8rem;
     font-family: 'Arial';
+    font-weight: 500;
   }
   .logo {
-    height: 6rem;
+    height: 4rem;
     cursor: pointer;
   }
 }

@@ -82,6 +82,13 @@ console.log('result2:', result2)
 console.log(arr1 + '数组中是否存在元素7：', arr1.includes(7))
 </pre>
 
+    <hr />
+    <h3>Array.reduce()</h3>
+    <p>Array.reduce()方法接受一个函数，对应一个累加器应用于数组中各个元素。</p>
+<pre>
+let count = arr1.reduce((sum, value) => sum + value, 0)
+console.log('count:', count)
+</pre>
     </div>
   </div>
 </template>
@@ -154,6 +161,12 @@ export default {
 
     // Array.includes()
     console.log(arr1 + '数组中是否存在元素7：', arr1.includes(7))
+
+    console.log('-----------------')
+
+    // Array.reduce()
+    let count = arr1.reduce((sum, value) => sum + value, 0)
+    console.log('count:', count)
   }
 }
 </script>

@@ -4,6 +4,7 @@ import Router from 'vue-router'
 import Home from '@/components/Home'
 
 import Basic from '@/components/Basic'
+import Scope from '@/components/basic/Scope'
 import Function from '@/components/basic/Function'
 import Prototypes from '@/components/basic/Prototypes'
 import Closure from '@/components/basic/Closure'
@@ -17,7 +18,12 @@ import Argument from '@/components/new/Argument'
 import ArrayKeysValues from '@/components/new/ArrayKeysValues'
 import Generators from '@/components/new/Generators'
 import Proxy from '@/components/new/Proxy'
+import Decorator from '@/components/new/Decorator'
 import AsyncAwait from '@/components/new/AsyncAwait'
+
+import Patterns from '@/components/Patterns'
+
+import Links from '@/components/fun/Links'
 
 import Hello from '@/components/Hello'
 
@@ -38,6 +44,7 @@ export default new Router({
       component: Basic,
       alias: '/basic'
     },
+    {path: '/basic/scope', component: Scope},
     {path: '/basic/function', component: Function},
     {path: '/basic/prototypes', component: Prototypes},
     {path: '/basic/closure', component: Closure},
@@ -55,7 +62,20 @@ export default new Router({
     {path: '/new/array_keys_values', component: ArrayKeysValues},
     {path: '/new/generators', component: Generators},
     {path: '/new/proxy', component: Proxy},
+    {path: '/new/decorator', component: Decorator},
     {path: '/new/async_await', component: AsyncAwait},
+    {
+      path: '/patterns/index',
+      name: 'PatternsIndex',
+      component: Patterns,
+      alias: '/patterns'
+    },
+    {
+      path: '/fun/links',
+      name: 'Links',
+      component: Links,
+      alias: '/links'
+    },
     {
       path: '/hello',
       name: 'Hello',
