@@ -23,6 +23,11 @@ import AsyncAwait from '@/components/new/AsyncAwait'
 
 import Patterns from '@/components/Patterns'
 
+import DataStructure from '@/components/DataStructure'
+import Array from '@/components/data_structures/Array'
+import List from '@/components/data_structures/List'
+import Stack from '@/components/data_structures/Stack'
+
 import Links from '@/components/fun/Links'
 
 import Hello from '@/components/Hello'
@@ -70,6 +75,15 @@ export default new Router({
       component: Patterns,
       alias: '/patterns'
     },
+    {
+      path: '/data_structure/index',
+      name: 'DataStructureIndex',
+      component: DataStructure,
+      alias: '/data_structure'
+    },
+    {path: '/data_structures/array', component: Array},
+    {path: '/data_structures/list', component: List},
+    {path: '/data_structures/stack', component: Stack},
     {
       path: '/fun/links',
       name: 'Links',

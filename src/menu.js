@@ -38,6 +38,17 @@ const menus = [
     items: []
   },
   {
+    id: 3,
+    title: 'Data Structures',
+    link: '/data_structure/index',
+    showMore: true,
+    items: [
+      {id: 1, title: 'Array 数组', link: '/data_structures/array'},
+      {id: 2, title: 'List 数组', link: '/data_structures/list'},
+      {id: 3, title: 'Stack 栈', link: '/data_structures/stack'}
+    ]
+  },
+  {
     id: 4,
     title: 'Fun Part',
     link: '/fun/Links',
