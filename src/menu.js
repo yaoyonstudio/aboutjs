@@ -45,7 +45,9 @@ const menus = [
     items: [
       {id: 1, title: 'Array 数组', link: '/data_structures/array'},
       {id: 2, title: 'List 数组', link: '/data_structures/list'},
-      {id: 3, title: 'Stack 栈', link: '/data_structures/stack'}
+      {id: 3, title: 'Stack 栈', link: '/data_structures/stack'},
+      {id: 3, title: 'Queue 队列', link: '/data_structures/queue'},
+      {id: 3, title: 'LinkedList 链表', link: '/data_structures/linked_list'}
     ]
   },
   {

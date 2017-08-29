@@ -27,6 +27,8 @@ import DataStructure from '@/components/DataStructure'
 import Array from '@/components/data_structures/Array'
 import List from '@/components/data_structures/List'
 import Stack from '@/components/data_structures/Stack'
+import Queue from '@/components/data_structures/Queue'
+import LinkedList from '@/components/data_structures/LinkedList'
 
 import Links from '@/components/fun/Links'
 
@@ -84,6 +86,8 @@ export default new Router({
     {path: '/data_structures/array', component: Array},
     {path: '/data_structures/list', component: List},
     {path: '/data_structures/stack', component: Stack},
+    {path: '/data_structures/queue', component: Queue},
+    {path: '/data_structures/linked_list', component: LinkedList},
     {
       path: '/fun/links',
       name: 'Links',
