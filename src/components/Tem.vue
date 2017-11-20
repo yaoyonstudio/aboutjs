@@ -2,9 +2,7 @@
   <div class="Tem">
     <h2>{{ title }}</h2>
     <div class="content">
-<pre>
-
-</pre>
+      <code id="editor"></code>
     </div>
   </div>
 </template>

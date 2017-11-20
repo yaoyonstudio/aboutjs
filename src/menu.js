@@ -35,7 +35,10 @@ const menus = [
     title: 'Design Patterns',
     link: '/patterns/index',
     showMore: true,
-    items: []
+    items: [
+      {id: 1, title: 'Singleton Design Pattern', link: '/pattern/singleton'},
+      {id: 1, title: 'Module Design Pattern', link: '/pattern/module'}
+    ]
   },
   {
     id: 3,

@@ -22,6 +22,8 @@ import Decorator from '@/components/new/Decorator'
 import AsyncAwait from '@/components/new/AsyncAwait'
 
 import Patterns from '@/components/Patterns'
+import Singleton from '@/components/pattern/Singleton'
+import Module from '@/components/pattern/Module'
 
 import DataStructure from '@/components/DataStructure'
 import Array from '@/components/data_structures/Array'
@@ -77,6 +79,8 @@ export default new Router({
       component: Patterns,
       alias: '/patterns'
     },
+    {path: '/pattern/singleton', component: Singleton},
+    {path: '/pattern/module', component: Module},
     {
       path: '/data_structure/index',
       name: 'DataStructureIndex',

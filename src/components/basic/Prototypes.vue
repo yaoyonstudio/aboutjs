@@ -3,16 +3,7 @@
     <h2>{{ title }}</h2>
     <div class="content">
 <h3>Object Prototypes</h3>
-<pre>
-var myObj = {
-  'name': 'ken'
-}
-
-console.log(myObj)
-console.log(myObj.name)
-console.log(myObj.hasOwnProperty('name'))
-console.log(myObj.hasOwnProperty('sex'))
-</pre>
+<code id="editor"></code>
 
 <h3>Function Prototypes</h3>
 
@@ -22,13 +13,23 @@ console.log(myObj.hasOwnProperty('sex'))
 </template>
 
 <script>
+// var ace = require('../../libs/ace')
 export default {
   data () {
     return {
       title: 'Prototypes'
     }
   },
-  created () {
+  mounted () {
+    var content = `var myObj = {
+  'name': 'ken'
+}
+console.log(myObj)
+console.log(myObj.name)
+console.log(myObj.hasOwnProperty('name'))
+console.log(myObj.hasOwnProperty('sex'))
+console.log('-------------')`
+    this.initEditor('editor', content)
     // console.log(Object)
     // console.log(Array)
     // console.log(Function)

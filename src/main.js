@@ -3,8 +3,22 @@
 import Vue from 'vue'
 import App from './App'
 import router from './router'
+// var ace = require('./libs/ace')
 
 import '../static/css/style.scss'
+
+Vue.mixin({
+  data () {
+    return {
+      initEditor: function (el, content) {
+        var editor = window.ace.edit(el)
+        editor.setValue(content, 1)
+        editor.setTheme('ace/theme/monokai')
+        editor.getSession().setMode('ace/mode/javascript')
+      }
+    }
+  }
+})
 
 Vue.config.productionTip = false
 
