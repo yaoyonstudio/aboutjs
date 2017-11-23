@@ -8,6 +8,7 @@ const menus = [
     items: [
       {id: 1, title: 'Scope', link: '/basic/scope'},
       {id: 1, title: 'Function', link: '/basic/function'},
+      {id: 1, title: 'Object', link: '/basic/object'},
       {id: 2, title: 'Prototypes', link: '/basic/prototypes'},
       {id: 2, title: 'Closure', link: '/basic/closure'},
       {id: 3, title: 'Reduce', link: '/basic/reduce'},
@@ -22,12 +23,20 @@ const menus = [
     link: '/new/index',
     showMore: true,
     items: [
+      {id: 1, title: 'Let', link: '/new/let'},
+      {id: 1, title: 'Arrow Function', link: '/new/arrow'},
+      {id: 1, title: 'Template String', link: '/new/template'},
       {id: 1, title: 'Parameters & Arguments', link: '/new/argument'},
       {id: 1, title: 'Array.keys/values/entries', link: '/new/array_keys_values'},
+      {id: 1, title: 'For...Of', link: '/new/forof'},
+      {id: 1, title: 'Object Iteration', link: '/new/object_iteration'},
+      {id: 1, title: 'Deconstruction', link: '/new/deconstruction'},
+      {id: 1, title: 'Class', link: '/new/class'},
       {id: 1, title: 'Generators', link: '/new/generators'},
       {id: 1, title: 'Proxy', link: '/new/proxy'},
       {id: 1, title: 'Decorator', link: '/new/decorator'},
-      {id: 1, title: 'Async/Await', link: '/new/async_await'}
+      {id: 1, title: 'Async/Await', link: '/new/async_await'},
+      {id: 1, title: 'Set', link: '/new/set'}
     ]
   },
   {
@@ -37,7 +46,9 @@ const menus = [
     showMore: true,
     items: [
       {id: 1, title: 'Singleton Design Pattern', link: '/pattern/singleton'},
-      {id: 1, title: 'Module Design Pattern', link: '/pattern/module'}
+      {id: 2, title: 'Module Design Pattern', link: '/pattern/module'},
+      {id: 3, title: 'Factory Design Pattern', link: '/pattern/factory'},
+      {id: 3, title: 'Constructor Design Pattern', link: '/pattern/constructor'}
     ]
   },
   {

@@ -15,6 +15,10 @@ export default {
     }
   },
   created () {
+  },
+  mounted () {
+    let content = ``
+    this.initEditor('editor', content)
   }
 }
 </script>

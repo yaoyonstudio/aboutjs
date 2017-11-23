@@ -4,49 +4,24 @@
     <div class="content">
       <h3>函数的定义</h3>
       <p>常见的函数定义方式：</p>
-<pre>
-// 1:使用function定义
-function add1 (a, b) {
-  return a + b
-}
-
-// 2:函数表达式
-const add2 = function (a, b) {
-  return a + b
-}
-
-// 3:ES6中的简记方法
-let person = {
-  name: 'ken',
-  age: 28,
-  add3 (a, b) {
-    return a + b
-  }
-}
-
-// 4:ES6中箭头函数
-const add4 = (a, b) => {
-  return a + b
-}
-</pre>
-
-    <hr />
-
-    <h3>自执行函数表达式（Immediately-Invoked Function Expression）</h3>
-<pre>
-(function () {
-  console.log('hello')
-})()
-</pre>
+      <code id="editor1"></code>
+      <hr />
+      <h3>自执行函数表达式（Immediately-Invoked Function Expression）</h3>
+      <code id="editor2"></code>
     </div>
   </div>
 </template>
 
 <script>
 // 自执行函数表达式（Immediately-Invoked Function Expression）
-(function () {
-  console.log('hello')
-})()
+// (function () {
+//   console.log('hello')
+// })()
+
+// const addFun = (function (a, b) {
+//   return a + b
+// })(1, 2)
+// console.log(addFun)
 
 export default {
   data () {
@@ -83,6 +58,49 @@ export default {
     console.log('add4:', add4(1, 2))
 
     console.log('--------------')
+  },
+  mounted () {
+    let content1 = `// 1:使用function定义
+function add1 (a, b) {
+  return a + b
+}
+
+// 2:函数表达式
+const add2 = function (a, b) {
+  return a + b
+}
+
+// 3:ES6中的简记方法
+let person = {
+  name: 'ken',
+  age: 28,
+  add3 (a, b) {
+    return a + b
+  }
+}
+
+// 4:ES6中箭头函数
+const add4 = (a, b) => {
+  return a + b
+}`
+    let content2 = `(function () {
+  console.log('hello')
+})()
+
+
+(function (a, b) {
+  console.log(a + b)
+})(1, 2)
+
+
+const addFun = (function (a, b) {
+  return a + b
+})(1, 2)
+console.log(addFun)
+`
+
+    this.initEditor('editor1', content1)
+    this.initEditor('editor2', content2)
   }
 }
 </script>
