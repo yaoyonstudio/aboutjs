@@ -13,6 +13,7 @@ Vue.mixin({
       initEditor: function (el, content) {
         var editor = window.ace.edit(el)
         editor.setValue(content, 1)
+        editor.$blockScrolling = Infinity
         editor.setTheme('ace/theme/monokai')
         editor.getSession().setMode('ace/mode/javascript')
       }

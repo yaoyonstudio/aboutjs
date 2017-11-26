@@ -28,7 +28,6 @@ import Generators from '@/components/new/Generators'
 import Proxy from '@/components/new/Proxy'
 import Decorator from '@/components/new/Decorator'
 import AsyncAwait from '@/components/new/AsyncAwait'
-import Set from '@/components/new/Set'
 
 import Patterns from '@/components/Patterns'
 import Singleton from '@/components/pattern/Singleton'
@@ -42,6 +41,8 @@ import List from '@/components/data_structures/List'
 import Stack from '@/components/data_structures/Stack'
 import Queue from '@/components/data_structures/Queue'
 import LinkedList from '@/components/data_structures/LinkedList'
+import Set from '@/components/data_structures/Set'
+import Map from '@/components/data_structures/Map'
 
 import Links from '@/components/fun/Links'
 
@@ -92,7 +93,6 @@ export default new Router({
     {path: '/new/proxy', component: Proxy},
     {path: '/new/decorator', component: Decorator},
     {path: '/new/async_await', component: AsyncAwait},
-    {path: '/new/set', component: Set},
     {
       path: '/patterns/index',
       name: 'PatternsIndex',
@@ -114,6 +114,8 @@ export default new Router({
     {path: '/data_structures/stack', component: Stack},
     {path: '/data_structures/queue', component: Queue},
     {path: '/data_structures/linked_list', component: LinkedList},
+    {path: '/data_structures/set', component: Set},
+    {path: '/data_structures/map', component: Map},
     {
       path: '/fun/links',
       name: 'Links',
