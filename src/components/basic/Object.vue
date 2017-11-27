@@ -19,6 +19,19 @@ export default {
     }
   },
   created () {
+    let obj1 = {
+      name: 'ken',
+      greet: function () {
+        console.log(`Hello, ${this.name} !`)
+      }
+    }
+    // 创建obj2，继承obj1，obj2此时同时继承obj1中属性和方法
+    let obj2 = Object.create(obj1, { age: { value: 18 } })
+    console.log(obj1)
+    console.log(obj2)
+    console.log(obj2.name)
+    obj1.greet()
+    obj2.greet()
   },
   mounted () {
     let content1 = `var myObj1 = {}

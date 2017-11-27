@@ -2,9 +2,7 @@
   <div class="Scope">
     <h2>{{ title }}</h2>
     <div class="content">
-<pre>
-
-</pre>
+      <code id="editor"></code>
     </div>
   </div>
 </template>
@@ -31,6 +29,25 @@ export default {
     console.log('outer foo:', foo)
     console.log('outer wow:', wow)
     // console.log('outer pow:', pow) // ReferenceError: pow is not defined
+  },
+  mounted () {
+    let content = `
+var foo = 'foo'
+var wow = 'wow'
+
+function bar (wow) {
+  var pow = 'pow'
+  console.log(foo) // 'foo'
+  console.log('inner pow:', pow) // 'pow'
+  console.log('inner wow:', wow) // 'zoom'
+}
+
+bar('zoom')
+console.log('outer foo:', foo)
+console.log('outer wow:', wow)
+// console.log('outer pow:', pow) // ReferenceError: pow is not defined
+`
+    this.initEditor('editor', content)
   }
 }
 </script>
