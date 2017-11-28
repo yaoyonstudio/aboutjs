@@ -33,6 +33,10 @@ export default {
     console.log(a2)
     console.log(b2)
 
+    let [a3, b3, c3, d3, e3, f3 = 10] = numbers
+    console.log(f3)
+
+    console.log('--------------------')
 
     // 对象解构
     let obj = {

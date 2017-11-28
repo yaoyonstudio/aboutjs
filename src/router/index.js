@@ -25,9 +25,14 @@ import ObjectIteration from '@/components/new/ObjectIteration'
 import Deconstruction from '@/components/new/Deconstruction'
 import Class from '@/components/new/Class'
 import Generators from '@/components/new/Generators'
+import Iterators from '@/components/new/Iterators'
 import Proxy from '@/components/new/Proxy'
 import Decorator from '@/components/new/Decorator'
 import AsyncAwait from '@/components/new/AsyncAwait'
+import StringExtension from '@/components/new/StringExtension'
+import ObjectExtension from '@/components/new/ObjectExtension'
+import ArrayExtension from '@/components/new/ArrayExtension'
+import Modules from '@/components/new/Modules'
 
 import Patterns from '@/components/Patterns'
 import Singleton from '@/components/pattern/Singleton'
@@ -41,6 +46,7 @@ import List from '@/components/data_structures/List'
 import Stack from '@/components/data_structures/Stack'
 import Queue from '@/components/data_structures/Queue'
 import LinkedList from '@/components/data_structures/LinkedList'
+import Symbol from '@/components/data_structures/Symbol'
 import Set from '@/components/data_structures/Set'
 import Map from '@/components/data_structures/Map'
 
@@ -90,9 +96,14 @@ export default new Router({
     {path: '/new/deconstruction', component: Deconstruction},
     {path: '/new/class', component: Class},
     {path: '/new/generators', component: Generators},
+    {path: '/new/iterators', component: Iterators},
     {path: '/new/proxy', component: Proxy},
     {path: '/new/decorator', component: Decorator},
     {path: '/new/async_await', component: AsyncAwait},
+    {path: '/new/string_extension', component: StringExtension},
+    {path: '/new/object_extension', component: ObjectExtension},
+    {path: '/new/array_extension', component: ArrayExtension},
+    {path: '/new/modules', component: Modules},
     {
       path: '/patterns/index',
       name: 'PatternsIndex',
@@ -114,6 +125,7 @@ export default new Router({
     {path: '/data_structures/stack', component: Stack},
     {path: '/data_structures/queue', component: Queue},
     {path: '/data_structures/linked_list', component: LinkedList},
+    {path: '/data_structures/symbol', component: Symbol},
     {path: '/data_structures/set', component: Set},
     {path: '/data_structures/map', component: Map},
     {

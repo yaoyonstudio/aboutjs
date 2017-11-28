@@ -21,7 +21,7 @@ const menus = [
     id: 2,
     title: 'ES6/ES7',
     link: '/new/index',
-    showMore: false,
+    showMore: true,
     items: [
       {id: 1, title: 'Let', link: '/new/let'},
       {id: 1, title: 'Arrow Function', link: '/new/arrow'},
@@ -32,10 +32,15 @@ const menus = [
       {id: 1, title: 'Object Iteration', link: '/new/object_iteration'},
       {id: 1, title: 'Deconstruction', link: '/new/deconstruction'},
       {id: 1, title: 'Class', link: '/new/class'},
+      {id: 1, title: 'Iterators', link: '/new/iterators'},
       {id: 1, title: 'Generators', link: '/new/generators'},
-      {id: 1, title: 'Proxy', link: '/new/proxy'},
       {id: 1, title: 'Decorator', link: '/new/decorator'},
-      {id: 1, title: 'Async/Await', link: '/new/async_await'}
+      {id: 1, title: 'Async/Await', link: '/new/async_await'},
+      {id: 1, title: 'Proxy', link: '/new/proxy'},
+      {id: 1, title: '字符串扩展', link: '/new/string_extension'},
+      {id: 1, title: '对象扩展', link: '/new/object_extension'},
+      {id: 1, title: '数组扩展', link: '/new/array_extension'},
+      {id: 3, title: 'Modules', link: '/new/modules'}
     ]
   },
   {
@@ -61,6 +66,7 @@ const menus = [
       {id: 3, title: 'Stack 栈', link: '/data_structures/stack'},
       {id: 3, title: 'Queue 队列', link: '/data_structures/queue'},
       {id: 3, title: 'LinkedList 链表', link: '/data_structures/linked_list'},
+      {id: 1, title: 'Symbol', link: '/data_structures/symbol'},
       {id: 1, title: 'Set', link: '/data_structures/set'},
       {id: 1, title: 'Map', link: '/data_structures/map'}
     ]
