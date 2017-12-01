@@ -19,6 +19,21 @@ export default {
     }
   },
   created () {
+    function factorialFunc (num) {
+      if (num < 0) {
+        return -1
+      } else if (num === 0) {
+        return 1
+      }
+      var tmp = num
+      while (num-- > 2) {
+        tmp *= num
+      }
+      return tmp
+    }
+
+    console.log('-------------------')
+
     // 阶乘
     function factorial (x) {
       if (x < 0) return
@@ -26,7 +41,8 @@ export default {
       return x * factorial(x - 1)
     }
 
-    console.log(factorial(5))   // 120
+    console.log(factorialFunc(5)) // 120
+    console.log(factorial(5))     // 120
   },
   mounted () {
     let content = `

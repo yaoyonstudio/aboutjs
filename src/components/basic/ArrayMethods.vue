@@ -2,6 +2,13 @@
   <div class="ArrayMethods">
     <h2>{{ title }}</h2>
     <div class="content">
+      <h3>Array.sort()</h3>
+      <p>Array.sort()用于数组排序，返回一个数组</p>
+<pre>
+let randomArr = [4, 12, 1, -3, 5, 312, 45]
+let orderedArr = randomArr.sort((a, b) => a < b)
+console.log(orderedArr)
+</pre>
       <h3>Array.forEach()</h3>
       <p>Array.forEach()只用于遍历数组每一个元素，并不返回新数组。</p>
 <pre>
@@ -101,6 +108,13 @@ export default {
     }
   },
   created () {
+    // Array.sort
+    let randomArr = [4, 12, 1, -3, 5, 312, 45]
+    let orderedArr = randomArr.sort((a, b) => a < b)
+    console.log(orderedArr)
+
+    console.log('-----------------')
+
     // Array.forEach()
     let arr1 = [1, 2, 3, 4, 5, 6, 7]
     arr1.forEach((item, index, array) => {

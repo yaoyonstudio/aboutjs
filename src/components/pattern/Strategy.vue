@@ -11,7 +11,7 @@
 export default {
   data () {
     return {
-      title: 'Tem'
+      title: 'Strategy Pattern'
     }
   },
   created () {

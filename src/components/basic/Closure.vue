@@ -62,6 +62,33 @@ export default {
 
     console.log('------------')
 
+    // 闭包（closure）经常用来做回调（callback）
+    var outerFun = function (a) {
+      // 外层函数可以访问参数
+      // console.log(a)
+      // 外层函数自定义变量在函数体内和其包括的内层函数内有效
+      var b = 1
+      // console.log(b)
+
+      var innerFun = function (d) {
+        // 内层函数自定义变量在外层父函数体内无法访问
+        var c = 2
+        // console.log(b)
+        // console.log(c)
+        return a + b + c + d
+      }
+      return innerFun
+    }
+
+    var a = outerFun(10)
+    console.log(a(5))
+    console.log(outerFun(10)(5))
+
+    // 子函数可以访问父函数的变量，而父函数却不能访问子函数的变量和参数
+    // 在需要操作和访问变量的时候，使用闭包来使父函数可以访问子函数的变量和参数
+
+    console.log('------------')
+
     function foo () {
       var a = 10
 
@@ -111,7 +138,35 @@ funA()`
 }
 
 let greet = outer('ken')
-console.log(greet('how are you?'))`
+console.log(greet('how are you?'))
+
+console.log('------------')
+
+// 闭包（closure）经常用来做回调（callback）
+var outerFun = function (a) {
+  // 外层函数可以访问参数
+  // console.log(a)
+  // 外层函数自定义变量在函数体内和其包括的内层函数内有效
+  var b = 1
+  // console.log(b)
+
+  var innerFun = function (d) {
+    // 内层函数自定义变量在外层父函数体内无法访问
+    var c = 2
+    // console.log(b)
+    // console.log(c)
+    return a + b + c + d
+  }
+  return innerFun
+}
+
+var a = outerFun(10)
+console.log(a(5))
+console.log(outerFun(10)(5))
+
+// 子函数可以访问父函数的变量，而父函数却不能访问子函数的变量和参数
+// 在需要操作和访问变量的时候，使用闭包来使父函数可以访问子函数的变量和参数
+`
 
     let content3 = `function foo () {
   var a = 10

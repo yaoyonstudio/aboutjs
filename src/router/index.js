@@ -5,11 +5,13 @@ import Home from '@/components/Home'
 
 import Basic from '@/components/Basic'
 import Scope from '@/components/basic/Scope'
+import This from '@/components/basic/This'
 import Function from '@/components/basic/Function'
 import Object from '@/components/basic/Object'
 import Prototypes from '@/components/basic/Prototypes'
 import Closure from '@/components/basic/Closure'
-import Reduce from '@/components/basic/Reduce'
+import ApplyCall from '@/components/basic/ApplyCall'
+import Callback from '@/components/basic/Callback'
 import Promise from '@/components/basic/Promise'
 import Recursion from '@/components/basic/Recursion'
 import ArrayMethods from '@/components/basic/ArrayMethods'
@@ -34,11 +36,25 @@ import ObjectExtension from '@/components/new/ObjectExtension'
 import ArrayExtension from '@/components/new/ArrayExtension'
 import Modules from '@/components/new/Modules'
 
+import Functional from '@/components/Functional'
+import Functions from '@/components/functional/Functions'
+import HighOrder from '@/components/functional/HighOrder'
+import Purity from '@/components/functional/Purity'
+import CurryingPartial from '@/components/functional/CurryingPartial'
+import Composition from '@/components/functional/Composition'
+
 import Patterns from '@/components/Patterns'
 import Singleton from '@/components/pattern/Singleton'
 import Module from '@/components/pattern/Module'
 import Factory from '@/components/pattern/Factory'
 import Constructor from '@/components/pattern/Constructor'
+import Iterator from '@/components/pattern/Iterator'
+import DecoratorPattern from '@/components/pattern/Decorator'
+import Strategy from '@/components/pattern/Strategy'
+import Facade from '@/components/pattern/Facade'
+import ProxyPattern from '@/components/pattern/Proxy'
+import Mediator from '@/components/pattern/Mediator'
+import Observer from '@/components/pattern/Observer'
 
 import DataStructure from '@/components/DataStructure'
 import Array from '@/components/data_structures/Array'
@@ -46,6 +62,7 @@ import List from '@/components/data_structures/List'
 import Stack from '@/components/data_structures/Stack'
 import Queue from '@/components/data_structures/Queue'
 import LinkedList from '@/components/data_structures/LinkedList'
+import Dictionary from '@/components/data_structures/Dictionary'
 import Symbol from '@/components/data_structures/Symbol'
 import Set from '@/components/data_structures/Set'
 import Map from '@/components/data_structures/Map'
@@ -72,11 +89,13 @@ export default new Router({
       alias: '/basic'
     },
     {path: '/basic/scope', component: Scope},
+    {path: '/basic/this', component: This},
     {path: '/basic/function', component: Function},
     {path: '/basic/object', component: Object},
     {path: '/basic/prototypes', component: Prototypes},
     {path: '/basic/closure', component: Closure},
-    {path: '/basic/reduce', component: Reduce},
+    {path: '/basic/apply_call', component: ApplyCall},
+    {path: '/basic/callback', component: Callback},
     {path: '/basic/promise', component: Promise},
     {path: '/basic/recursion', component: Recursion},
     {path: '/basic/array_methods', component: ArrayMethods},
@@ -105,6 +124,17 @@ export default new Router({
     {path: '/new/array_extension', component: ArrayExtension},
     {path: '/new/modules', component: Modules},
     {
+      path: '/functional/index',
+      name: 'Functional',
+      component: Functional,
+      alias: '/functional'
+    },
+    {component: Functions, path: '/functional/function'},
+    {component: HighOrder, path: '/functional/high_order'},
+    {component: Purity, path: '/functional/purity'},
+    {component: CurryingPartial, path: '/functional/currying'},
+    {component: Composition, path: '/functional/composition'},
+    {
       path: '/patterns/index',
       name: 'PatternsIndex',
       component: Patterns,
@@ -114,6 +144,13 @@ export default new Router({
     {path: '/pattern/module', component: Module},
     {path: '/pattern/factory', component: Factory},
     {path: '/pattern/constructor', component: Constructor},
+    {path: '/pattern/iterator', component: Iterator},
+    {path: '/pattern/decorator', component: DecoratorPattern},
+    {path: '/pattern/strategy', component: Strategy},
+    {path: '/pattern/facade', component: Facade},
+    {path: '/pattern/proxy', component: ProxyPattern},
+    {path: '/pattern/mediator', component: Mediator},
+    {path: '/pattern/observer', component: Observer},
     {
       path: '/data_structure/index',
       name: 'DataStructureIndex',
@@ -125,6 +162,7 @@ export default new Router({
     {path: '/data_structures/stack', component: Stack},
     {path: '/data_structures/queue', component: Queue},
     {path: '/data_structures/linked_list', component: LinkedList},
+    {path: '/data_structures/dictionary', component: Dictionary},
     {path: '/data_structures/symbol', component: Symbol},
     {path: '/data_structures/set', component: Set},
     {path: '/data_structures/map', component: Map},
