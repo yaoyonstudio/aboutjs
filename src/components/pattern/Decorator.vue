@@ -17,6 +17,30 @@ export default {
     }
   },
   created () {
+    function Formater (str) {
+      this.str = str || ''
+    }
+    Formater.prototype.getString = function () {
+      return this.str
+    }
+    Formater.decorators = {}
+    Formater.decorators.Upper = {
+      getString: function () {
+        return this.str.toUpperCase()
+      }
+    }
+    Formater.prototype.decorate = function (decorator) {
+      var F = function () {}
+      var overrides = this.constructor.decorators[decorator]
+      var i, newobj
+      F.prototype = this
+      newobj = new F()
+      newobj.uber = F.prototype
+      for (i in overrides) {
+        newobj[i] = overrides[i]
+      }
+      return newobj
+    }
   },
   mounted () {
     let content = ``
